@@ -57,9 +57,11 @@ function changeRunTextAndIntentValue(){
     if(intent == 0){
         intent=1;
         document.getElementById('run').innerHTML = "Run With Intent";
+        document.getElementById('script').innerHTML = "Think of a number.";
     }else{
         intent=0;
         document.getElementById('run').innerHTML = "Run Again";
+        document.getElementById('script').innerHTML = "Do not think of any number. Step away from the computer if you want.";
     }
 }
 
