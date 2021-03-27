@@ -21,7 +21,7 @@ function getRandomInt(max) {
 function log(randomint){
     console.log(randomint);
     var newLine = document.createElement("li");
-    newLine.innerHTML = (typeof txt === 'string') ? txt : JSON.stringify(randomint, null, 4);
+    newLine.innerHTML =  randomint;
     document.querySelector('#console').appendChild(newLine);
 }
 
@@ -34,6 +34,7 @@ function getRandomArray(){
     for(var x=0; x<reps; x++){
         var randomint = getRandomInt(2);
         log(randomint);
+        wait(10000);
 
         array[x] = randomint;
     } 
@@ -68,6 +69,13 @@ function changeRunTextAndIntentValue(){
 function clearConsole(){
     document.querySelector('#console').innerHTML = "";
 }
+
+function wait(waitsecs) {
+    setTimeout(function(){
+        //
+    },waitsecs);
+}
+
 
 //https://jonlabelle.com/snippets/view/javascript/calculate-mean-median-mode-and-range-in-javascript
 function mean(array) {
