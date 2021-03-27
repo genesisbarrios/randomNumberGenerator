@@ -1,0 +1,25 @@
+.console{
+    background-color: black !important;
+    color:green;
+    border:1px solid black;
+    width:50%;
+    margin: 0 auto;
+    height:200px;
+    overflow-x:hidden;
+    overflow-y:visible;
+}
+
+a{
+    text-decoration: none !important;
+  }
+
+ul#console {
+    list-style-type: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    line-height: 25px;
+    padding-left: 5px;
+  }
+  ul#console li {
+    border-bottom: solid 1px #80808038;
+  }
